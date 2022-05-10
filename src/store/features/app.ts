@@ -66,16 +66,16 @@ export const fetchGames =
         }))
         .value()
 
-      // Group “ball”, “virtual” and “fun” in an “Other” category.
-      categories.push({
-        id: 'other',
-        name: 'Other'
-      })
-
-      categories.push({
-        id: 'jackpot',
-        name: 'Jackpot'
-      })
+      categories.push(
+        {
+          id: OTHER_CATEGORY,
+          name: 'Other'
+        },
+        {
+          id: JACKPOT_CATEGORY,
+          name: 'Jackpots'
+        }
+      )
 
       const state = getState()
 
